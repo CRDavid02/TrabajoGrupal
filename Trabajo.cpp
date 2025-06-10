@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>
 using namespace std;
 
@@ -50,3 +51,7 @@ int main() {
     return 0;
 }
 
+=======
+//tarea
+//otra forma
+>>>>>>> 0a09387bc9ef203544317b08763fb70c2219f89b
