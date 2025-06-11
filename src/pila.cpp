@@ -1,4 +1,4 @@
-#inclaude "pila.h"
+#include "pila.h"
 void pushiHistorial(NodoPia*& cima, const string& desc) {
   NodoPila* nuevo = new NodoPila{desc, cima;
   cima = nuevo;
