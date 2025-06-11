@@ -1,7 +1,11 @@
+#include <iostream>
 #include "cola.h"
+using namespace std;
 
 void encolar(NodoCola*& frente, NodoCola*& fin, Proceso* proceso) {
-    Nodo Cola* nuevo = new NodoCola{proceso, nullptr);
+    NodoCola* nuevo = new NodoCola;
+    nuevo->proceso = proceso;
+    nuevo->siguiente = NULL;
 
     if(!frente) {
         frente = fin = nuevo;
@@ -12,13 +16,13 @@ void encolar(NodoCola*& frente, NodoCola*& fin, Proceso* proceso) {
 }
 
 Proceso* desencolar(NodoCola*& frente, NodoCola*& fin) {
-    if (!frente) return nullptr;
+    if (!frente) return NULL;
 
     NodoCola* temp = frente;
     Proceso* proceso = temp->proceso;
     frente = frente->siguiente;
 
-    if (!frente) fin = nullptr;
+    if (!frente) fin = NULL;
     delete temp;
     return proceso;
 }
@@ -26,7 +30,7 @@ Proceso* desencolar(NodoCola*& frente, NodoCola*& fin) {
 void mostrarCola(NodoCola* frente) {
     NodoCola* actual = frente;
     while (actual) {
-        cout << "Proceso: " << actual->proceso->nombre<<"| ID: " << actual->proceso->id<< endl;
+        cout<< "Proceso: " << actual->proceso->nombre<<"| ID: " << actual->proceso->id<< endl;
         actual = actual-> siguiente;
     }
 }
