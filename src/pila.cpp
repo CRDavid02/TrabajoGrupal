@@ -1,6 +1,6 @@
 #include "pila.h"
-void pushHistorial(NodoPia*& cima, const string& desc) {
-  NodoPila* nuevo = new NodoPila{desc, cima;
+void pushHistorial(NodoPila*& cima, const string& desc) {
+  NodoPila* nuevo = new NodoPila{desc, cima};
   cima = nuevo;
 }
 void popHistorial(NodoPila*& cima) {
@@ -14,7 +14,7 @@ delete temp;
 }
 void verHistorial(NodoPila* cima) {
   if (!cima) {
-cout <<"Hiatorial vacio. \n";
+cout <<"Historial vacio. \n";
 return;
   }
 NodoPila* actual = cima;
