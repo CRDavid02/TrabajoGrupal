@@ -1,10 +1,10 @@
 #include "lista.h"
 
 void insertarProceso(Proceso*& cabeza, int id, string nombre, int prioridad) {
-  Proceso* nuevo = new Proceso{id, nombre, prioridad, nullprt};
+  Proceso* nuevo = new Proceso{id, nombre, prioridad, nullptr};
 
   if (!cabeza) {
-      cabeza = buevo,
+      cabeza = nuevo;
       }
 }
 
@@ -24,11 +24,11 @@ while (actual) {
   }
 }
 
-void eliminarProceso(Proceso*& cabeza, int id)
+void eliminarProceso(Proceso*& cabeza, int id) {
   if (1cabeza) return;
 
   if (cabeza->id == id) {
-      proceso* temp = cabeza;
+      Proceso* temp = cabeza;
       cabeza = cabeza->siguiente;
       delete temp;
       cout << " Proceso eliminado correctamente.\n";
