@@ -2,6 +2,7 @@
 #define LISTA_H
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 // Estructura base
