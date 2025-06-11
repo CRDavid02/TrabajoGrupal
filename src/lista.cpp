@@ -1,7 +1,7 @@
 #include "lista.h"
 
 void insertarProceso(Proceso*& cabeza, int id, string nombre, int prioridad) {
-  proceso* nuevo = new Proceso¨{id, nombre, prioridad, nullpr};
+  Proceso* nuevo = new Proceso{id, nombre, prioridad, nullprt};
 
   if (!cabeza) {
       cabeza = buevo,
