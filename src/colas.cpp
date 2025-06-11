@@ -30,7 +30,8 @@ Proceso* desencolar(NodoCola*& frente, NodoCola*& fin) {
 void mostrarCola(NodoCola* frente) {
     NodoCola* actual = frente;
     while (actual) {
-        cout<< "Proceso: " << actual->proceso->nombre<<"| ID: " << actual->proceso->id<< endl;
+        cout<< "Proceso: " << actual->proceso->nombre
+            <<"| ID: " << actual->proceso->id<< endl;
         actual = actual-> siguiente;
     }
 }
