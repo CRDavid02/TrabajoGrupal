@@ -1,16 +1,23 @@
-#ifndef COLA_H
+#ifndef COLA_H        //Directiva para evitar inclusión múltiple del archivo
 #define COLA_H
 
-#include "lista.h"
+#include "lista.h"    //se incluye la definición de "Procesos"
 
-struct NodoCola {
-  Proceso* proceso;
-  NodoCola* siguiente;
+//Estructura que representa a un nodo de la cola
+struct NodoCola {  
+  Proceso* proceso;        //puntero al proceso que contiene este nodo
+  NodoCola* siguiente;     //Puntero al siguiente nodo en la cola
 };
 
-//funciones
+//Declaración de funciones relacionadas con la cola
+
+//Inserta un proceso al final de la cola
 void encolar(NodoCola*& frente, NodoCola*& fin, Proceso* proceso);
+
+//Extrae (y retorna) el proceso en el frente de la cola
 Proceso* desencolar(NodoCola*& frente, NodoCola*& fin);
+
+//Muestra los procesos presentes en la cola
 void mostrarCola(NodoCola* frente);
 
-#endif
+#endif //Fin del include guard
