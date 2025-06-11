@@ -6,14 +6,14 @@ using namespace std;
 
 // Estructura base
 struct Proceso {
-  int id:
+  int id;
   string nombre;
   int prioridad;
   Proceso* siguiente;
 };
 
-//funciones de lista
-void insertarProceso(proceso*& cabeza, int id, string nombre, int prioridad);
+// funciones de lista
+void insertarProceso(Proceso*& cabeza, int id, string nombre, int prioridad);
 void mostrarProcesos(Proceso* cabeza);
 void eliminarProceso(Proceso*& cabeza, int id);
 
