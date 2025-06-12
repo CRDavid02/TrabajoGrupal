@@ -1,0 +1,4 @@
+Jhon Elthon Ticona Ccanchi: hizo la parte de listas, en dev c++ y ayudo en el informe con algunas evidencias y otros tanto como la coordinacion en equipo t tambien hizo las pruebas de ejecutar el sistema operativo. 100%
+JOHAN AIME LOPEZ: hizo la parte  de pilas de dev c++ y ayudo con el informe y el manual de usuarios. 100%	
+HALBER DAVID CCAPCHI RIOS:  hizo colas DEC C++ y tambien hiza el diagrama de flujos y evidencias de loq ue es el informe  y tambien hizo las pruebas de ejecutar el sistema operativo. 100%
+ALESSANDRA PAOLA PACAHUALA MENDOZA: hizo el main del o nuestro menu en c++, tambien hizo las presentaciones y hizo la coordinacion necesaria para todo esto y ayudo ala creacion de carpetas asignada para cada apartado que tenemos que realizar nosotros. 100%
