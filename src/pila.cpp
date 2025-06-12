@@ -1,5 +1,7 @@
 #include <iostream>
 #include "pila.h"
+using namespace std;
+
 void pushHistorial(NodoPila*& cima, const string& desc) {
   NodoPila* nuevo = new NodoPila;
   nuevo->descripcion = desc;
